@@ -1,0 +1,9 @@
+version: '3'
+services:
+  localsql:
+    image: microsoft/mssql-server-linux:2017-latest
+    environment:
+      SA_PASSWORD: 'localpassword123!'
+      ACCEPT_EULA: 'Y'
+    ports:
+      - '11433:1433'
